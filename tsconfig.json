@@ -16,6 +16,6 @@
     "baseUrl": ".",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "lib/use-data.js", "pages/rsc.server.tsx", "components/item.client.jsx", "components/item.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "lib/use-data.js", "src/pages/rsc.server.tsx", "src/components/item.client.jsx", "src/components/item.jsx"],
   "exclude": ["node_modules"]
 }

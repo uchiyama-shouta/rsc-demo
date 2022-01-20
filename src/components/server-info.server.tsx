@@ -1,7 +1,8 @@
 export default function ServerInfo() {
+  const now = new Date().toTimeString();
   return (
     <div className="pb-5 text-sm text-center">
-      Rendered at {new Date().toTimeString()} with Edge Middleware.
+      Rendered at {now} with Edge Middleware.
     </div>
   );
 }

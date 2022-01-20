@@ -8,14 +8,6 @@ const Document = () => {
         {process.env.NODE_ENV === "development" && (
           <>
             <script src="https://cdn.tailwindcss.com" />
-            <script>{`
-              tailwind.config = {
-                content: ["./pages/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
-                theme: {
-                  extend: {},
-                  },
-                plugins: [],
-            }`}</script>
           </>
         )}
       </Head>

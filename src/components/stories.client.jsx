@@ -1,7 +1,7 @@
-import Story from './story.client'
-import Link from 'next/link'
+import Story from "./story.client";
+import Link from "next/link";
 
-export default ({ stories, page = 1, offset = null }) => (
+const Stories = ({ stories, page = 1, offset = null }) => (
   <div>
     {stories.map((story, i) => (
       <div key={story.id} className="item">
@@ -35,7 +35,7 @@ export default ({ stories, page = 1, offset = null }) => (
         text-align: right;
       }
       .count::after {
-        content: '.';
+        content: ".";
       }
       .story {
         flex: 100;
@@ -52,4 +52,6 @@ export default ({ stories, page = 1, offset = null }) => (
       }
     `}</style>
   </div>
-)
+);
+
+export default Stories;
