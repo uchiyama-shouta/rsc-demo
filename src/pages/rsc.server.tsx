@@ -5,7 +5,7 @@ import Skeletons from "../components/skeletons";
 
 // Server Components
 import Footer from "../components/layout/footer.server";
-import SystemInfo from "../components/server-info.server";
+import SystemInfo from "../components/server-info.client";
 
 // Client Components
 import Page from "../components/page.client";

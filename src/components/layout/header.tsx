@@ -1,21 +1,11 @@
 import Nav from "../nav";
-import Logo from "../logo";
-import Link from "next/link";
+import Logo from "../logo.client";
 
 export default function Header() {
   return (
     <header className="flex text-sm bg-[#ffa52a]">
       <div className="grow-[9]">
-        <Link href="/">
-          <a>
-            <span className="inline-block mt-1 mr-[5px] mb-[2px] ml-1 ">
-              <Logo />
-            </span>
-            <span className="inline-block pt-2 pr-[10px] pb-0 pl-1 text-base font-bold align-top md:pb-2 md:text-sm">
-              Hacker Next
-            </span>
-          </a>
-        </Link>
+        <Logo />
         <div className="block uppercase align-top md:inline-block">
           <Nav />
         </div>

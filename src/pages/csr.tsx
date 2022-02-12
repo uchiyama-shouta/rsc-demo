@@ -37,13 +37,9 @@ function NewsWithData() {
 export default function News() {
   return (
     <Page>
-      {typeof window === "undefined" ? (
-        <Spinner />
-      ) : (
-        <Suspense fallback={<Spinner />}>
-          <NewsWithData />
-        </Suspense>
-      )}
+      <Suspense fallback={<Spinner />}>
+        <NewsWithData />
+      </Suspense>
     </Page>
   );
 }
