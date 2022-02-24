@@ -1,6 +1,6 @@
 import type { VFC, ReactNode } from "react";
-import Header from "./layout/header";
-import Meta from "./meta";
+import Header from "../layout/header";
+import Meta from "../meta";
 
 type Props = { children: ReactNode };
 

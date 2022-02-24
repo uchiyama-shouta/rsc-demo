@@ -4,11 +4,11 @@ import { Suspense } from "react";
 import Skeletons from "../components/skeletons";
 
 // Server Components
+import Page from "../components/page/index.server";
 import Footer from "../components/layout/footer.server";
 import SystemInfo from "../components/server-info.client";
 
 // Client Components
-import Page from "../components/page.client";
 import Story from "../components/story.client";
 
 // Utils

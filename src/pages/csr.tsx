@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import Spinner from "../components/spinner";
 
 // Client Components
-import Page from "../components/page.client";
+import Page from "../components/page/index.client";
 import Story from "../components/story.client";
 
 // Utils

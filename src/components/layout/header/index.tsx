@@ -1,5 +1,5 @@
-import Nav from "../nav";
-import Logo from "../logo.client";
+import Nav from "../../nav";
+import Logo from "../../logo";
 
 export default function Header() {
   return (
