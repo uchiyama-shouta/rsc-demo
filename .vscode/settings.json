@@ -7,4 +7,5 @@
   "editor.formatOnType": true,
   "files.encoding": "utf8",
   "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.tabSize": 2,
 }

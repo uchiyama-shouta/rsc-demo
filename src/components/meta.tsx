@@ -1,13 +1,6 @@
-import Head from "next/head";
-// import Router from 'next/router'
-
 export default function Meta() {
   return (
     <div>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta charSet="utf-8" />
-      </Head>
       <style
         dangerouslySetInnerHTML={{
           __html: `
@@ -44,34 +37,6 @@ export default function Meta() {
       @keyframes spinner-rotating {
         from { transform: rotate(0deg) }
         to { transform: rotate(360deg) }
-      }
-      .title {
-        font-size: 15px;
-        margin-bottom: 3px;
-      }
-      .title > a {
-        color: #000;
-        text-decoration: none;
-      }
-      .title > a:visited {
-        color: #828282;
-      }
-      .meta {
-        font-size: 12px;
-      }
-      .source {
-        font-size: 12px;
-        display: inline-block;
-        margin-left: 5px;
-      }
-      .source a,
-      .meta a {
-        color: #828282;
-        text-decoration: none;
-      }
-      .source a:hover,
-      .meta a:hover {
-        text-decoration: underline;
       }
     `,
         }}

@@ -28,7 +28,7 @@ const Story: VFC<Props> = ({
 
   return (
     <div className="my-[5px]">
-      <div className="title">
+      <div className="mb-[3px] text-[15px]">
         <span
           className={`cursor-pointer font-sans mr-[5px] ${
             voted ? "text-[#ffa52a]" : "text-[#ccc]"
@@ -37,18 +37,30 @@ const Story: VFC<Props> = ({
         >
           &#9650;
         </span>
-        <a href={url}>{title}</a>
+        <a className="text-black visited:text-gray-400" href={url}>
+          {title}
+        </a>
         {url ? (
-          <span className="source">
-            <a href={`http://${host}`}>{host.replace(/^www\./, "")}</a>
+          <span className="inline-block ml-1 text-xs">
+            <a
+              className="text-gray-400 hover:underline"
+              href={`http://${host}`}
+            >
+              {host.replace(/^www\./, "")}
+            </a>
           </span>
         ) : null}
       </div>
-      <div className="meta">
+      <div className="text-xs">
         {score} {plural(score, "point")} by{" "}
-        <a href={`/user?id=${user}`}>{user}</a>{" "}
-        <a href={`/item?id=${id}`}>{timeAgo(new Date(date))} ago</a> |{" "}
-        <a href={`/item?id=${id}`}>
+        <a className="text-gray-400 hover:underline" href={`/user?id=${user}`}>
+          {user}
+        </a>{" "}
+        <a className="text-gray-400 hover:underline" href={`/item?id=${id}`}>
+          {timeAgo(new Date(date))} ago
+        </a>{" "}
+        |{" "}
+        <a className="text-gray-400 hover:underline" href={`/item?id=${id}`}>
           {commentsCount} {plural(commentsCount, "comment")}
         </a>
       </div>
