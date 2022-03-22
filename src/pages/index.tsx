@@ -3,7 +3,7 @@ import type { VFC } from "react";
 
 const Page: NextPage = () => {
   return (
-    <div className="container">
+    <div className="pt-5 mx-auto text-xl text-center">
       <h1>React Server Components in Next.js</h1>
       <SectionWithH2
         title="Without Streaming"
@@ -44,36 +44,35 @@ const Page: NextPage = () => {
           </small>
         </p>
       </section>
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-            h1 {
-              font-size: 2em;
-            }
-            h2 {
-              font-size: 1.4em;
-              margin-top: 2em;
-            }
-            .container {
-              font-size: 20px;
-              text-align: center;
-            }
-            small {
-              font-size: .8em;
-            }
-            p {
-              margin: 10px;
-            }
-            section {
-              display: block;
-              margin: 5px 0;
-              text-underline-position: from-font;
-            }
-            section a {
-              color: #1386ff;
-            }`,
-        }}
-      />
+      <style jsx>{`
+        h1 {
+          font-size: 2em;
+        }
+        h2 {
+          font-size: 1.4em;
+          margin-top: 2em;
+        }
+        .container {
+          font-size: 20px;
+          text-align: center;
+          margin: auto;
+          padding-top: 20px;
+        }
+        small {
+          font-size: 0.8em;
+        }
+        p {
+          margin: 10px;
+        }
+        section {
+          display: block;
+          margin: 5px 0;
+          text-underline-position: from-font;
+        }
+        section a {
+          color: #1386ff;
+        }
+      `}</style>
     </div>
   );
 };
