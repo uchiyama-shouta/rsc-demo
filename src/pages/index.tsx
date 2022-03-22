@@ -86,6 +86,16 @@ const SectionWithH2: VFC<{
           {props.text}
         </a>
       </section>
+      <style jsx>{`
+        section {
+          display: block;
+          margin: 5px 0;
+          text-underline-position: from-font;
+        }
+        section a {
+          color: #1386ff;
+        }
+      `}</style>
     </>
   );
 };
