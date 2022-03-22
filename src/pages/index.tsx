@@ -52,12 +52,6 @@ const Page: NextPage = () => {
           font-size: 1.4em;
           margin-top: 2em;
         }
-        .container {
-          font-size: 20px;
-          text-align: center;
-          margin: auto;
-          padding-top: 20px;
-        }
         small {
           font-size: 0.8em;
         }
