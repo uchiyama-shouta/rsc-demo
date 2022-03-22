@@ -47,21 +47,6 @@ const Page: NextPage = () => {
       <style
         dangerouslySetInnerHTML={{
           __html: `
-            html {
-              height: 100%;
-            }
-            body {
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              height: 100%;
-              margin: 0;
-              padding: 20px 20px 80px;
-              box-sizing: border-box;
-              color: #333;
-              -webkit-font-smoothing: antialiased;
-              font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
-            }
             h1 {
               font-size: 2em;
             }
